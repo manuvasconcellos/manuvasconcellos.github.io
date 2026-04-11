@@ -1,0 +1,97 @@
+/* Configurações base para o container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Seção de Certificados */
+.certificados-section {
+    padding: 40px 0;
+}
+
+.certificados-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6A5B80;
+    font-family: sans-serif;
+}
+
+/* Grid Layout: Escalável e responsivo */
+.certificados-grid {
+    display: grid;
+    /* Cria colunas que se adaptam ao tamanho da tela. Mínimo de 300px por card */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card do Certificado */
+.certificado-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* Imagem do Certificado */
+.certificado-img {
+    margin: 0;
+    width: 100%;
+    height: 200px; /* Altura fixa para padronizar os cards */
+    overflow: hidden;
+}
+
+.certificado-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita distorção da imagem */
+    display: block;
+}
+
+/* Área de informações e botão */
+.certificado-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: sans-serif;
+}
+
+.certificado-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.certificado-info p {
+    margin: 0 0 20px 0;
+    font-size: 0.9rem;
+    color: #9B88B5;
+    flex-grow: 1; /* Empurra o botão para baixo se os textos tiverem tamanhos diferentes */
+}
+
+/* Botão de Download */
+.btn-download {
+    display: inline-block;
+    text-align: center;
+    background-color: #9B88B5; /* Ajuste para a cor primária da marca da sua cliente */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: #2D2D2D;
+}
