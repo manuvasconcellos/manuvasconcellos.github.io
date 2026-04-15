@@ -1,0 +1,79 @@
+.contato {
+    padding: 4rem 0;
+}
+
+.contato h2 {
+    color: var(--lavanda-escuro);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.descricao-contato {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+.contato-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-contato {
+    background: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-contato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.item-contato h3 {
+    color: var(--lavanda-escuro);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.item-contato p {
+    color: var(--texto-base);
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
+.item-contato a {
+    color: var(--lavanda-primario);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.item-contato a:hover {
+    color: var(--lavanda-escuro);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contato {
+        padding: 3rem 0;
+    }
+
+    .contato h2 {
+        font-size: 1.8rem;
+    }
+
+    .descricao-contato {
+        font-size: 0.95rem;
+    }
+
+    .item-contato {
+        padding: 1.5rem;
+    }
+}
